@@ -1,0 +1,88 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;  // Import the Scanner class
+
+class Jablko {
+    public static void main(String[] args) { //prva uloha
+        Scanner myObj = new Scanner(System.in);  // Create a Scanner object
+        
+        int day = 0;
+        while ((day < 1)||(day > 31)){
+            System.out.println("Zadaj den   ");
+            day = myObj.nextInt();  // Read user input
+        }
+        
+        int month = 0;
+        while ((month < 1)||(month > 12)){
+            System.out.println("Zadaj mesiac   ");
+            month = myObj.nextInt();  // Read user input
+        }
+            
+        String zod = "word";
+        
+        if (month == 1){
+            zod = "1. znamenie";
+        }
+        else if (month == 2){
+            zod = "2. znamenie";
+        }
+        else if (month == 3){
+            zod = "3. znamenie";
+        }
+        else if (month == 4){
+            zod = "4. znamenie";
+        }
+        else if (month == 5){
+            zod = "5. znamenie";
+        }
+        else if (month == 6){
+            zod = "6. znamenie";
+        }
+        else if (month == 7){
+            zod = "7. znamenie";
+        }
+        else if (month == 8){
+            zod = "8. znamenie";
+        }
+        else if (month == 9){
+            zod = "9. znamenie";
+        }
+        else if (month == 10){
+            zod = "10. znamenie";
+        }
+        else if (month == 11){
+            zod = "11. znamenie";
+        }
+        else if (month == 12){
+            zod = "12. znamenie";
+        }
+        
+        switch(month){
+            case 1: zod = "1. znamenie"; break;
+            case 2: zod = "2. znamenie"; break;
+            case 3: zod = "3. znamenie"; break;
+            case 4: zod = "4. znamenie"; break;
+            case 5: zod = "5. znamenie"; break;
+            case 6: zod = "6. znamenie"; break;
+            case 7: zod = "7. znamenie"; break;
+            case 8: zod = "8. znamenie"; break;
+            case 9: zod = "9. znamenie"; break;
+            case 10: zod = "10. znamenie"; break;
+            case 11: zod = "11. znamenie"; break;
+            case 12: zod = "12. znamenie"; break;
+            default: zod = "13. znamenie";
+        }
+        
+        System.out.println("XXX born " + day +"." + month +" is " + zod +".");  // Output user input
+    }
+    
+    /*public static void main(String[] args) { // druha uloha
+        int[] pole = new int[3];
+        for (int i = 0; i < 3; i++){
+            pole[i] = i;
+            System.out.println("array[" + i + "] contains " + pole[i] +".\n");
+        }
+    }*/
+        
+    
+}
